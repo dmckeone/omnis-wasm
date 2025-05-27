@@ -1,0 +1,46 @@
+name: Build bundle
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bundle Component with Vite
+        uses: actions/setup-node@v3
+        with:
+          node-version: "23"
+          cache: "npm"
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          target: wasm32-unknown-unknown
+      - name: Setup wasm-pack
+        uses: jetli/wasm-pack-action@v0.4.0
+      - name: Setup wasm-bindgen-cli
+        uses: jetli/wasm-bindgen-action@v0.2.0
+      - name: Test build
+        run: cargo test
+      - run: |
+          npm ci
+          npm run build --if-present
+          mv dist omnis-wasm
+          tar -zcvf omnis-wasm.tar.gz omnis-wasm/
+      - name: Upload Omnis Studio JS Worker Module
+        uses: actions/upload-artifact@v4
+        with:
+          name: omnis-wasm
+          path: omnis-wasm.tar.gz
+      - name: Extract package.json version
+        if: startsWith(github.ref, 'refs/tags/')
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@v1.3.1
+      - name: Build release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          name: v${{ steps.package-version.outputs.current-version }}
+          files: |
+            omnis-wasm.tar.gz
+            LICENSE
