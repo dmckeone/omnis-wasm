@@ -1,0 +1,32 @@
+[
+	{
+		"name": "$event",
+		"order": 16384,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "left",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "oPair",
+				"sublen": 0
+			},
+			{
+				"name": "pair",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "oPair",
+				"sublen": 0
+			},
+			{
+				"name": "right",
+				"order": 3,
+				"type": "kObject",
+				"subtype": "oPair",
+				"sublen": 0
+			}
+		]
+	}
+]

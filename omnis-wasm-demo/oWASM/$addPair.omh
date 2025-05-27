@@ -1,0 +1,9 @@
+Do params.$define(left,right)
+Calculate params.left as pLeft.$asRow()
+Calculate params.right as pRight.$asRow()
+Do $cinst.$callmethod('omnis_wasm','add_pair',params,kTrue) Returns #F
+If flag false
+	Breakpoint Failed to call method
+End If
+Calculate pair as iLastResult.pair
+Quit method $clib.$objects.oPair.$new(pair.one,pair.two)

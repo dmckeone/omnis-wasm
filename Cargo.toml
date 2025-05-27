@@ -1,0 +1,16 @@
+[package]
+name = "omnis-wasm"
+version = "0.1.0"
+authors = ["David McKeone <david@artsman.com>"]
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+serde = { version = "1.0", features = ["derive"] }
+tsify = "0.5"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3"

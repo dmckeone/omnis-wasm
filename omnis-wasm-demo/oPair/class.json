@@ -1,0 +1,47 @@
+{
+	"classtype": "kObjectclass",
+	"omnisversion": "11.2",
+	"omnisbuild": 990038902,
+	"internalversion": 11,
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "iOne",
+			"order": 1,
+			"type": "kInteger",
+			"subtype": "k64bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iTwo",
+			"order": 2,
+			"type": "kInteger",
+			"subtype": "k64bitint",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"canremotedebugwhenlocked": false,
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componentinfo": {
+
+		},
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2025-05-27 12:13:10",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2025-05-27 12:19:15",
+		"selfcontained": false,
+		"showascheckedout": false,
+		"userinfo": "",
+		"vcsrevision": 0,
+		"version": ""
+	}
+}

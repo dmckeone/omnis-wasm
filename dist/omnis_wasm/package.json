@@ -1,0 +1,6 @@
+{
+  "name": "omnis_wasm",
+  "version": "0.0.1",
+  "main": "omnis_wasm.js",
+  "type": "module"
+}

@@ -1,0 +1,10 @@
+# Block until complete
+Do params.$define(one,two)
+Calculate params.one as pOne
+Calculate params.two as pTwo
+Do $cinst.$callmethod('omnis_wasm','create_pair',params,kTrue) Returns #F
+If flag false
+	Breakpoint Failed to call JS module
+End If
+Calculate pair as iLastResult.pair
+Quit method $clib.$objects.oPair.$new(pair.one,pair.two)

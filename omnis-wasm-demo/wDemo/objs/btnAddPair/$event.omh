@@ -1,0 +1,6 @@
+On evClick ## Event Parameters - pRow( Itemreference )
+	Calculate left as $clib.$objects.oPair.$new(iPair2One,iPair2Two)
+	Calculate right as $clib.$objects.oPair.$new(iPair3One,iPair3Two)
+	
+	Calculate pair as iWASM.$addPair(left,right)
+	OK message Pair:  $one: [pair.$one],  $two: [pair.$two]

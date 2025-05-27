@@ -1,0 +1,6 @@
+
+Do row.$define(one,two)
+Calculate row.one as iOne
+Calculate row.two as iTwo
+
+Quit method row

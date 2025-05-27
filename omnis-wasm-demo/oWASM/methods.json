@@ -1,0 +1,170 @@
+[
+	{
+		"name": "$construct",
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$greet",
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$createPair",
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pOne",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k64bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pTwo",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k64bitint",
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "one",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k64bitint",
+				"sublen": 0
+			},
+			{
+				"name": "pair",
+				"order": 6,
+				"type": "kRow",
+				"subtype": "oPair",
+				"sublen": 0
+			},
+			{
+				"name": "params",
+				"order": 3,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "two",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k64bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$methodreturn",
+		"order": 5,
+		"pvardefs": [
+			{
+				"name": "pResult",
+				"order": 1,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$addPair",
+		"order": 6,
+		"pvardefs": [
+			{
+				"name": "pLeft",
+				"order": 1,
+				"type": "kObject",
+				"subtype": "oPair",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pRight",
+				"order": 2,
+				"type": "kObject",
+				"subtype": "oPair",
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "left",
+				"order": 4,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "pair",
+				"order": 8,
+				"type": "kRow",
+				"subtype": "oPair",
+				"sublen": 0
+			},
+			{
+				"name": "params",
+				"order": 3,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "right",
+				"order": 5,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$workererror",
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pErrorInfo",
+				"order": 1,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

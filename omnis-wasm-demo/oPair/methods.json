@@ -1,0 +1,87 @@
+[
+	{
+		"name": "$construct",
+		"order": 1,
+		"pvardefs": [
+			{
+				"name": "pOne",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k64bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pTwo",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k64bitint",
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$one",
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$two",
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$asRow",
+		"order": 5,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "one",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k64bitint",
+				"sublen": 0
+			},
+			{
+				"name": "row",
+				"order": 3,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "two",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k64bitint",
+				"sublen": 0
+			}
+		]
+	}
+]
