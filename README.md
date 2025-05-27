@@ -8,10 +8,10 @@ A template for building Rust code as WASM, and then importing it into a type-saf
 
 Ensure that Rust (and Cargo) are installed by using [RustUp](https://rustup.rs/)
 
-Then, at the root of the directory:
+Install `wasm-pack` for cleaner build commands
 
 ```bash
-cargo install
+cargo install wasm-pack
 ```
 
 ### Compile Rust to WASM with `wasm-pack build`
